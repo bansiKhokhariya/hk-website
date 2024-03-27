@@ -106,7 +106,6 @@ const WaterReminder = lazy(() => import('./components/Company/Resources/CaseStud
 // *********** Contact us ***********
 const Contact = lazy(() => import('./components/Contact/Contact.jsx'));
 
-
 const App = () => {
   return (
     <>
