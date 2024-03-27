@@ -1,0 +1,52 @@
+.multiPlayer-modeling-box {
+    display: flex;
+    width: 276px;
+    height: 400px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 30px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.multiPlayer-modeling-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    position: absolute;
+    top: 50px;
+    bottom: 50px;
+    right: -100%;
+    overflow: hidden;
+    width: 255px;
+    color: white;
+    transition: right 0.5s ease;
+    padding: 30px 10px 30px 30px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.multiPlayer-modeling-box:hover .multiPlayer-modeling-overlay {
+    right: 0;
+    color: white;
+}
+
+@media (max-width:300px) {
+    .multiPlayer-modeling-box {
+        height: 300px;
+        gap: 30px;
+    }
+    .multiPlayer-modeling-overlay {  
+        width: 220px;
+        padding: 20px 10px 20px 20px;
+    }
+    .multiPlayer-modeling-overlay-text{
+        font-size: 12px;
+    }
+}

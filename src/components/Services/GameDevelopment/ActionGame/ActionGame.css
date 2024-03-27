@@ -1,0 +1,393 @@
+.action-modeling-section {
+    margin: 0 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* action box section */
+.actionGame-modeling-box {
+    width: 409px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* action box 1 */
+.actionGame-modeling-box-1 {
+    border-right: 2px solid rgba(0, 191, 103, 0.20);
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+}
+
+.actionGame-modeling-overlay-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    height: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.actionGame-modeling-box-1:hover .actionGame-modeling-overlay-1 {
+    top: 0;
+    height: 100%;
+}
+
+
+/* action box 2 */
+.actionGame-modeling-box-2 {
+    border-right: 2px solid rgba(0, 191, 103, 0.20);
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+}
+
+.actionGame-modeling-box-2:hover .actionGame-modeling-overlay-1 {
+    top: 0;
+    height: 100%;
+}
+
+/* action box 3 */
+.actionGame-modeling-box-3 {
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+}
+
+.actionGame-modeling-box-3:hover .actionGame-modeling-overlay-1 {
+    top: 0;
+    height: 100%;
+}
+
+/* action box 4 */
+.actionGame-modeling-box-4 {
+    border-right: 2px solid rgba(0, 191, 103, 0.20);
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.actionGame-modeling-overlay-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: right 0.5s ease;
+    padding: 0 30px;
+}
+
+.actionGame-modeling-box-4:hover .actionGame-modeling-overlay-4 {
+    right: 0;
+}
+
+
+/* action box 5 */
+.actionGame-modeling-box-5 {
+    border-right: 2px solid rgba(0, 191, 103, 0.20);
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+
+.actionGame-modeling-overlay-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    padding: 0 30px;
+    height: 100%;
+    position: absolute;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    transform: scale(0, 0);
+    top: 20px;
+    right: 20px;
+    opacity: 0;
+}
+
+.actionGame-modeling-box-5:hover .actionGame-modeling-overlay-5 {
+    transform: scale(1, 1);
+    transition: all 0.3s ease-out;
+    top: 0;
+    right: 0;
+    opacity: 1;
+}
+
+/* action box 6 */
+.actionGame-modeling-box-6 {
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.actionGame-modeling-overlay-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: left 0.5s ease;
+    padding: 0 30px;
+}
+
+.actionGame-modeling-box-6:hover .actionGame-modeling-overlay-6 {
+    left: 0;
+}
+
+
+/* action box 7 */
+.actionGame-modeling-box-7 {
+    width: 614px;
+    border-right: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+}
+
+.actionGame-modeling-overlay-7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 100%;
+    height: 0;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.actionGame-modeling-box-7:hover .actionGame-modeling-overlay-7 {
+    bottom: 0;
+    height: 100%;
+}
+
+
+/* action box 8 */
+.actionGame-modeling-box-8 {
+    width: 614px;
+    position: relative;
+    z-index: 1;
+}
+
+.actionGame-modeling-box-8:hover .actionGame-modeling-overlay-7 {
+    bottom: 0;
+    height: 100%;
+}
+
+
+/* box second section */
+.actionGame-second-box-section {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.actionGame-second-section-box {
+    width: 614px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* left side box */
+.actionGame-second-box-left {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-right: 2px solid rgba(0, 191, 103, 0.20);
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+}
+
+.actionGame-second-box-left:hover .actionGame-modeling-overlay-4 {
+    right: 0;
+}
+
+.actionGame-second-box-left-last {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.actionGame-second-box-left-last:hover .actionGame-modeling-overlay-4 {
+    right: 0;
+}
+
+
+/* right side box */
+.actionGame-second-box-right {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0, 191, 103, 0.20);
+}
+
+.actionGame-second-box-right:hover .actionGame-modeling-overlay-6 {
+    left: 0;
+}
+
+.actionGame-second-box-right-last {
+    border-left: 2px solid rgba(0, 191, 103, 0.20);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.actionGame-second-box-right-last:hover .actionGame-modeling-overlay-6 {
+    left: 0;
+}
+
+.actionGame-box-title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.actiongame-modeling-overlay-text {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+@media (max-width:1850px) {
+    .actionGame-modeling-box {
+        width: 320px;
+        height: 200px;
+    }
+
+    .actionGame-box-title {
+        font-size: 17px;
+    }
+
+    .actiongame-modeling-overlay-text {
+        font-size: 16px;
+    }
+
+    .actionGame-second-section-box {
+        width: 514px;
+    }
+}
+
+@media (max-width:1700px) {
+    .actionGame-modeling-box {
+        width: 409px;
+    }
+
+    .actionGame-box-title {
+        font-size: 20px;
+    }
+
+    .actiongame-modeling-overlay-text {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:1550px) {
+    .actionGame-modeling-box {
+        width: 350px;
+    }
+
+    .actionGame-box-title {
+        font-size: 17px;
+    }
+
+    .actiongame-modeling-overlay-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1110px) {
+    .actionGame-modeling-box {
+        width: 270px;
+    }
+
+    .actionGame-box-title {
+        font-size: 14px;
+    }
+
+    .actiongame-modeling-overlay-text {
+        font-size: 12px;
+    }
+
+    .actionGame-second-section-box {
+        width: 400px;
+    }
+}
+
+@media (max-width:880px) {
+
+    .actionGame-second-box-right,
+    .actionGame-second-box-left,
+    .actionGame-second-box-left-last,
+    .actionGame-second-box-right-last {
+        border: 2px solid rgba(0, 191, 103, 0.20);
+    }
+
+    .actionGame-modeling-box {
+        width: 400px;
+    }
+
+    .actionGame-box-title {
+        font-size: 16px;
+    }
+
+    .actiongame-modeling-overlay-text {
+        font-size: 14px;
+    }
+
+    .actionGame-modeling-box-1,
+    .actionGame-modeling-box-2,
+    .actionGame-modeling-box-3,
+    .actionGame-modeling-box-4,
+    .actionGame-modeling-box-5,
+    .actionGame-modeling-box-6,
+    .actionGame-modeling-box-7,
+    .actionGame-modeling-box-8{
+        border: 2px solid rgba(0, 191, 103, 0.20);
+    }
+
+}
+
+@media (max-width:300px) {
+    .actionGame-box-title {
+        font-size: 14px;
+    }
+    .actiongame-modeling-overlay-text {
+        font-size: 12px;
+    }
+}

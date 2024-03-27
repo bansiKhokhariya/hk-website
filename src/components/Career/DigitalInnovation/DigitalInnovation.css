@@ -1,0 +1,114 @@
+.digitalInnovation-section-1 {
+    background-color: #E4F7F3;
+    padding: 50px 0 50px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalInnovation-section-2 {
+    background-color: #E4F7F3;
+    padding: 50px 300px 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalInnovation-text-section {
+    background-color: #FFF;
+    height: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.digitalInnovation-image-3{
+    width: 100%;
+}
+
+
+@media (max-width: 1700px) {
+    .digitalInnovation-section-1 {
+        padding: 50px 0 50px 150px;
+    }
+
+    .digitalInnovation-section-2 {
+        padding: 50px 150px 50px 0;
+    }
+}
+
+
+
+@media (max-width:1425px) {
+    .digitalInnovation-section-1 {
+        padding: 50px 0 50px 50px;
+    }
+
+    .digitalInnovation-section-2 {
+        padding: 50px 50px 50px 0;
+    }
+}
+
+@media (max-width: 1215px) {
+
+    .digitalInnovation-image-1 {
+        width: 300px;
+        height: 300px;
+    }
+
+    .digitalInnovation-image-2{
+        width: 300px;
+        height: 500px;
+    }
+
+    .digitalInnovation-text-section {
+        background-color: #FFF;
+        height: 100%;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .digitalInnovation-section-1 {
+        padding: 50px 0 50px 20px;
+    }
+
+    .digitalInnovation-section-2 {
+        padding: 50px 20px 50px 0;
+    }
+}
+
+@media (max-width:750px) {
+
+    .digitalInnovation-section-1,
+    .digitalInnovation-section-2 {
+        padding: 25px 20px 25px 20px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .digitalInnovation-image-2{
+        width: 300px;
+        height: 400px;
+    }    
+}
+
+@media (max-width:300px) {
+    .digitalInnovation-image-1 {
+        width: 250px;
+        height: 250px;
+    }
+
+    .digitalInnovation-image-2{
+        width: 250px;
+        height: 300px;
+    }
+
+    .digitalInnovation-text-section {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,24 @@
+.conatct-main-section {
+    margin-top: -150px;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+}
+
+.contact-form-bx {
+    background-color: #fff;
+    height: 100%;
+    padding: 40px;
+}
+
+.input-box-area-conatct input {
+    width: 20vw;
+    padding: 24px;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px, 0px, 2px, 0px;
+    gap: 10px;
+    background-color: #E4F7F3;
+    border: none;
+    border-bottom: 2px solid #007B4280;
+    outline: none;
+}

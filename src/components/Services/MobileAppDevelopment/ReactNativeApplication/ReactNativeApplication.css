@@ -1,0 +1,122 @@
+ .react-native-main-sec {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 100px;
+ }
+
+ .hexy {
+   position: relative;
+   margin: 10px 40px;
+   background-color: #FFF;
+   height: 173.205px;
+   width: 100px;
+   display: inline-block;
+   transition: all 0.5s;
+   z-index: 1;
+ }
+
+ .hexy,
+ .hexy:before,
+ .hexy:after {
+   height: 173.205px;
+   width: 100px;
+ }
+
+ .hexy:hover {
+   background-color: #007B42;
+   cursor: pointer;
+   box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+ }
+
+ .hexy:before {
+   position: absolute;
+   content: "";
+   background-color: inherit;
+   transform: rotate(60deg);
+   overflow: hidden;
+ }
+
+ .hexy:after {
+   position: absolute;
+   content: "";
+   background-color: inherit;
+   transform: rotate(-60deg);
+ }
+
+ .hexy:nth-child(odd) {
+   top: 88px;
+ }
+
+ .hexynone {
+   position: relative;
+   display: inline-block;
+   height: 173.205px;
+   width: 100px;
+   margin: 10px 40px;
+ }
+
+ .hexynone:nth-child(odd) {
+   top: 88px;
+ }
+
+ .hex-content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 140px;
+   text-align: center;
+   z-index: 100;
+ }
+
+ .hex-container {
+   margin-top: -80px;
+ }
+
+
+ .hex-overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   opacity: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+ }
+
+ .hexy:hover .hex-overlay {
+   opacity: 1;
+ }
+
+ .hex-overlay-text {
+   color: #FFF;
+   text-align: center;
+   font-size: 16px;
+   font-weight: 600;
+ }
+
+ .reactnative-main-image {
+   display: none;
+ }
+
+ @media (max-width:970px) {
+   .react-native-main-sec {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: -50px;
+   }
+
+   .hex-container {
+     display: none;
+   }
+
+   .reactnative-main-image {
+     display: block;
+     width: 100%;
+   }
+ }

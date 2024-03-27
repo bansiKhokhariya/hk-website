@@ -1,0 +1,410 @@
+ /* section 1 */
+ .benefitsPerks-section-1 {
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding: 50px 0 50px 0;
+ }
+
+ .benefitsPerks-section-1-left {
+     display: flex;
+     flex-direction: column;
+     gap: 100px;
+ }
+
+ .benefitsPerks-section-1-title {
+     font-family: Montserrat;
+     font-size: 80px;
+     font-weight: 700;
+     text-align: left;
+     line-height: 50px;
+ }
+
+ .benefitsPerks-section-1-title-span {
+     font-family: Montserrat;
+     font-size: 40px;
+     font-weight: 700;
+     text-align: left;
+ }
+
+ .benefitsPerks-section-1-textarea {
+     background-color: #FFF;
+     padding: 40px;
+     border-radius: 40px;
+     margin-right: -250px;
+     z-index: 1;
+     position: relative;
+ }
+
+ .perk-1-image {
+     width: 700px;
+     height: 700px;
+     border-radius: 50%;
+     -webkit-transition-property: transform;
+     transition-property: transform;
+     -webkit-transition-duration: 0.4s;
+     transition-duration: 0.4s;
+     -webkit-transition-timing-function: cubic-bezier(0.47, 3.02, 0.31, -0.36);
+     transition-timing-function: cubic-bezier(0.47, 3.02, 0.31, -0.36);
+ }
+
+ .benefitsPerks-section-image {
+     width: 700px;
+     height: 700px;
+     overflow: hidden;
+     border-radius: 50%;
+ }
+
+ .benefitsPerks-section-1:hover {
+     .perk-1-image {
+         -webkit-transform: scale(1.2);
+         transform: scale(1.2);
+     }
+
+     .benefitsPerks-section-1-title {
+         color: #007B42;
+     }
+ }
+
+
+ /* section 2 */
+ .benefitsPerks-section-2 {
+     position: relative;
+     transition: all 0.5s ease-in-out;
+     height: 100%;
+ }
+
+ .perk-2-image {
+     transition: all 0.5s ease-in-out;
+ }
+
+ .benefitsPerks-section-2-container {
+     position: absolute;
+     top: 30%;
+     bottom: 30%;
+     left: 20%;
+     right: 20%;
+     background: #00000033;
+     padding: 50px;
+     border-radius: 30px;
+     backdrop-filter: blur(20px);
+     transition: all 0.3s ease-in-out;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 40px;
+ }
+
+ .benefitsPerks-section-2-title {
+     font-size: 40px;
+     font-weight: 700;
+     text-align: center;
+     color: #FFFFFF;
+ }
+
+ .benefitsPerks-section-2-text {
+     font-size: 20px;
+     font-weight: 400;
+     text-align: center;
+     color: #FFFFFF;
+ }
+
+ .benefitsPerks-section-2:hover {
+     background: #00BF67;
+
+     .benefitsPerks-section-2-container {
+         left: 16%;
+         right: 24%;
+     }
+
+     .perk-2-image {
+         margin-left: 20px;
+     }
+
+ }
+
+ /* section 3 */
+
+ .benefitsPerks-section-3 {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 50px 0 50px 0;
+     gap: 20px;
+ }
+
+ .benefitsPerks-section-3:hover {
+     .perk-1-image {
+         -webkit-transform: scale(1.2);
+         transform: scale(1.2);
+     }
+
+     .benefitsPerks-section-3-title,
+     .benefitsPerks-section-3-title-span {
+         color: #007B42;
+     }
+ }
+
+ .benefitsPerks-section-3-title {
+     font-family: Montserrat;
+     font-size: 60px;
+     font-weight: 700;
+     text-align: right;
+ }
+
+ .benefitsPerks-section-3-title-span {
+     font-family: Montserrat;
+     font-size: 40px;
+     font-weight: 700;
+     text-align: right;
+ }
+
+ .benefitsPerks-section-3-text {
+     font-family: Montserrat;
+     font-size: 20px;
+     font-weight: 400;
+     text-align: right;
+     color: #7A7D7F;
+ }
+
+ .benefitsPerks-section-3-container {
+     display: flex;
+     flex-direction: column;
+     gap: 30px;
+ }
+
+
+ /* section 4 */
+ .benefitsPerks-section-4 {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .perk-4-image {
+     width: 100%;
+     transition: all 0.3s ease-in-out;
+ }
+
+ .benefitsPerks-section-4-container {
+     background: #00000033;
+     padding: 40px;
+     border-radius: 30px;
+     backdrop-filter: blur(20px);
+     transition: all 0.5s ease-in-out;
+     color: white;
+     position: absolute;
+     left: 20%;
+     right: 20%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     gap: 20px;
+     text-align: center;
+ }
+
+ .benefitsPerks-section-4:hover {
+     .perk-4-image {
+         transform: scale(1.2);
+     }
+ }
+
+
+ @media (max-width:1400px) {
+     .perk-2-image {
+         width: 80%;
+     }
+
+     .benefitsPerks-section-2-container {
+         top: 20%;
+         bottom: 20%;
+         padding: 20px;
+         gap: 20px;
+     }
+
+     .benefitsPerks-section-2-title {
+         font-size: 30px;
+     }
+
+     .benefitsPerks-section-2-text {
+         font-size: 18px;
+     }
+ }
+
+ @media (max-width:1250px) {
+
+     .benefitsPerks-section-3-title {
+         font-size: 40px;
+     }
+
+     .benefitsPerks-section-3-title-span {
+         font-size: 25px;
+     }
+
+     .benefitsPerks-section-3-text {
+         font-size: 16px;
+     }
+
+     .benefitsPerks-section-3-container {
+         gap: 20px;
+     }
+
+     .benefitsPerks-section-2-title {
+         font-size: 30px;
+     }
+
+     .benefitsPerks-section-2-text {
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width:1100px) {
+
+     .benefitsPerks-section-4-container {
+         gap: 10px;
+     }
+
+     .benefitsPerks-section-1-left {
+         display: flex;
+         flex-direction: column;
+         gap: 60px;
+     }
+
+     .perk-1-image,
+     .benefitsPerks-section-image {
+         width: 600px;
+         height: 600px;
+     }
+
+     .benefitsPerks-section-1-title {
+         font-size: 60px;
+     }
+
+     .benefitsPerks-section-1-title-span {
+         font-size: 30px;
+         text-align: left;
+     }
+
+     .benefitsPerks-section-1-textarea {
+         margin-right: -220px;
+     }
+ }
+
+ @media (max-width:900px) {
+
+     .benefitsPerks-section-3-title {
+         font-size: 30px;
+     }
+
+     .benefitsPerks-section-3-title-span {
+         font-size: 15px;
+     }
+
+     .benefitsPerks-section-3-text {
+         font-size: 12px;
+     }
+
+     .benefitsPerks-section-2-container {
+         padding: 30px;
+     }
+
+     .benefitsPerks-section-2-title {
+         font-size: 25px;
+     }
+
+     .benefitsPerks-section-2-text {
+         font-size: 12px;
+     }
+
+     .benefitsPerks-section-1-left {
+         display: flex;
+         flex-direction: column;
+         gap: 40px;
+     }
+
+     .perk-1-image,
+     .benefitsPerks-section-image {
+         width: 500px;
+         height: 500px;
+     }
+
+     .benefitsPerks-section-1-title {
+         font-size: 40px;
+     }
+
+     .benefitsPerks-section-1-title-span {
+         font-size: 20px;
+     }
+
+     .benefitsPerks-section-1-textarea {
+         margin-right: -200px;
+     }
+ }
+
+ @media (max-width:750px) {
+     .benefitsPerks-section-1-left {
+         gap: 30px;
+     }
+
+     .perk-1-image,
+     .benefitsPerks-section-image,
+     .benefitsPerks-section-image-main,
+     .perk-2-image {
+         display: none;
+     }
+
+     .benefitsPerks-section-1-textarea {
+         margin-right: 0;
+     }
+
+     .benefitsPerks-section-2 {
+         background: #00BF67;
+     }
+
+     .benefitsPerks-section-2-container {
+         position: relative;
+         left: 0%;
+         right: 0%;
+         height: 100%;
+         width: 100%;
+     }
+
+     .benefitsPerks-section-2:hover {
+
+         .benefitsPerks-section-2-container {
+             left: 0%;
+             right: 0%;
+             height: 100%;
+             width: 100%;
+         }
+
+         .perk-2-image {
+             margin-left: 0;
+         }
+     }
+
+     .benefitsPerks-section-4-container {
+         padding: 20px;
+         left: 0%;
+         right: 0%;
+         gap: 0;
+     }
+
+ }
+
+ @media (max-width:300px) {
+     .benefitsPerks-section-1-left {
+         gap: 20px;
+     }
+
+     .benefitsPerks-section-1-textarea {
+         padding: 30px;
+     }
+
+     .benefitsPerks-section-4 {
+         height: 250px;
+     }
+ }

@@ -1,13 +1,66 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('./components/Home/Project/Project.css');
+@import url('./components/Home/WeAre/WeAre.css');
+@import url('./components/Services/MobileAppDevelopment/AndroidJAVAApplication/AndroidJAVAApplication.css');
+@import url('./components/Services/WebsiteDevelopment/PHP/Shopify/Shopify.css');
+@import url('./components/Services/GameDevelopment/ActionGame/ActionGame.css');
+@import url('./components/Services/WebsiteDevelopment/Mern/MongoDb/MongoDb.css');
+@import url('./components/Services/WebsiteDevelopment/PHP/Wordpress/Wordpress.css');
+@import url('./components/Services/WebsiteDevelopment/Mern/Mern.css');
+@import url('./components/Services/MobileAppDevelopment/MobileAppDevelopment.css');
+@import url('./components/Services/Designing/UiUxDesignServices/UiUxDesignServices.css');
+@import url('./components/Solution/Support/Support.css');
+
+
+:root {
+
+  font-family: Montserrat;
+  line-height: normal;
+  font-weight: 400;
+
+  --dark-color: #000000;
+  --green-color: #007B42;
+  --white-color: #FFFFFF;
+  --bg-color: #E4F7F3;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.link-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+.website-main-section {
+  background-color: #E4F7F3;
+}
+
+.website-innner-section {
+  margin: 0px 300px;
+}
+
+
+@media (max-width: 1700px) {
+  .website-innner-section {
+    margin: 0px 150px;
+  }
+}
+
+@media (max-width:1425px) {
+  .website-innner-section {
+    margin: 0px 50px;
+  }
+}
+
+@media (max-width: 1215px) {
+  .website-innner-section {
+    margin: 0px 20px;
+  }
 }

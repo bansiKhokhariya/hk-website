@@ -1,0 +1,674 @@
+.javaApp-banner-part {
+    margin-bottom: -30px;
+}
+
+/* java round circle shape section */
+
+.main-section-java {
+    position: 'relative';
+    margin: 150px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-center-round-java {
+    width: 350px;
+    height: 350px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, #FFF -0.59%, #FCFCFD 46.42%, #F2F4F5 83.81%, #EBEEF0 99.88%);
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-center-under-round-java {
+    width: 270px;
+    height: 270px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, #FFF 0%, #FCFCFD 44.48%, #F2F4F5 79.86%, #EBEEF0 95.06%);
+}
+
+.java-icon {
+    width: 119px;
+    height: 216px;
+    flex-shrink: 0;
+    /* background: url("/icon/javaMainCenter.svg"); */
+    background: url("../../../../../public/icon/javaMainCenter.svg");
+    transition: all 0.3s;
+}
+
+.center-round-ring {
+    width: 380px;
+    height: 300px;
+    background-color: #007B42;
+    border-radius: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.center-java-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.left-arrow-java {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    transition: left 0.3s ease;
+}
+
+.right-arrow-java {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    right: -10%;
+    transition: right 0.3s ease;
+}
+
+.up-arrow-java {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    top: 40%;
+    transition: top 0.3s ease;
+}
+
+.down-arrow-java {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    bottom: 20%;
+    transition: bottom 0.3s ease;
+}
+
+.left-bottom-arrow-java {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    transform: translate(40%, 20%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-bottom-arrow-java {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    transform: translate(20%, 40%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-top-arrow-java {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    transform: translate(20%, 40%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.right-top-arrow-java {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    transform: translate(40%, 20%);
+    transition: transform 0.3s ease-in-out;
+}
+
+.center-java-section:hover {
+
+    .main-center-round-java {
+        box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+    }
+
+    .java-icon {
+        width: 158px;
+        height: 255px;
+        /* background: url("/icon/javaMainCenterBlurIcon.svg"); */
+        background: url("../../../../../public/icon/javaMainCenterBlurIcon.svg");
+    }
+
+    .center-round-ring {
+        opacity: 1;
+    }
+
+    .left-arrow-java {
+        left: -10%;
+    }
+
+    .right-arrow-java {
+        right: -69%;
+    }
+
+    .up-arrow-java {
+        top: -20%;
+    }
+
+    .down-arrow-java {
+        bottom: -115%;
+    }
+
+    .left-bottom-arrow-java {
+        margin-left: 100px;
+        transform: translate(-15%, 150%);
+    }
+
+    .right-bottom-arrow-java {
+        transform: translate(70%, 150%);
+    }
+
+    .left-top-arrow-java {
+        transform: translate(0, -150%);
+    }
+
+    .right-top-arrow-java {
+        transform: translate(70%, -150%);
+    }
+
+}
+
+.around-java-container {
+    position: relative;
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+}
+
+.around-java-container .around-java-container-bx {
+    position: relative;
+    left: -50%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.around-java-container .around-java-container-bx .around-java-container-textBx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: rotate(calc(360deg/8 * var(--i)));
+    transform-origin: 420px;
+    z-index: 1;
+}
+
+.around-java-container .around-java-container-bx .around-java-container-textBx .around-section {
+    position: absolute;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/8 * var(--i)));
+}
+
+.around-round-java-behind {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    background: linear-gradient(180deg, #FFF -0.27%, #FCFCFD 46.52%, #F2F4F5 83.74%, #EBEEF0 99.73%), #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.around-center-behind-Bx {
+    width: 104px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 60px;
+    background: #007B42;
+    position: absolute;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.around-center-under-round-java {
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    border-radius: 1000px;
+    background: linear-gradient(0deg, #FFF 0.76%, #FCFCFD 46.13%, #F2F4F5 82.22%, #EBEEF0 97.73%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding: 30px;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.around-section:hover {
+    .around-round-java-behind {
+        box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+    }
+
+    .around-center-behind-Bx {
+        opacity: 1;
+    }
+}
+
+.content-java {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+}
+
+.contentBx {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  second java section  */
+
+.java-second-section {
+    display: flex;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.java-second-section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    border-radius: 30px;
+    transition: all 0.5s;
+    width: 50%;
+}
+
+.java-second-section-box:hover {
+    background-color: #FFF;
+}
+
+.java-second-section-title {
+    color: #007B42;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.java-second-section-text {
+    color: #7A7D7F;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.java-second-section-text-span {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*  third java section  */
+
+.java-third-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+
+}
+
+.java-third-section-box-image {
+    width: 500px;
+    height: 500px;
+}
+
+.java-third-section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.java-collapse {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.java-collapse-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.java-collapse-title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.java-collapse-content {
+    color: #7A7D7F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-height: 0;
+    overflow: hidden;
+    transform-origin: bottom;
+    transition: all 0.5s ease-in-out;
+}
+
+.java-collapse-main-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.java-collapse-main-box:hover {
+    .java-collapse-checkbox circle {
+        fill: #007B42;
+        transition: 0.5s;
+    }
+
+    .java-collapse-content {
+        max-height: 1000px;
+    }
+}
+
+/*  fourth java section  */
+
+.java-fourth-section {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-bottom: 50px;
+}
+
+.java-fourth-section-button {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    width: 335px;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.java-fourth-section-button-text {
+    color: #007B42;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.java-fourth-section-button:hover {
+    background: #FFF;
+    box-shadow: 0px 50px 100px 0px #007B4233;
+
+
+    .java-fourth-section-button-svg #clip0_183_5303 rect {
+        fill: black;
+    }
+
+    .java-fourth-section-button-svg #clip0_183_5303 rect {
+        fill: black;
+    }
+}
+
+
+
+
+@media (max-width:1100px) {
+
+    .main-section-java {
+        margin: 50px 0;
+        padding-left: 50px;
+    }
+
+    .around-center-under-round-java {
+        width: 140px;
+        height: 140px;
+        font-size: 16px;
+    }
+
+    .around-round-java-behind {
+        width: 180px;
+        height: 180px;
+    }
+
+    .around-center-behind-Bx {
+        width: 90px;
+        height: 160px;
+    }
+
+    .around-java-container .around-java-container-bx .around-java-container-textBx {
+        transform-origin: 400px;
+    }
+
+    .main-center-under-round-java {
+        width: 250px;
+        height: 250px;
+    }
+
+    .main-center-round-java {
+        margin-right: 40px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .center-round-ring {
+        margin-right: 40px;
+        width: 340px;
+        height: 280px;
+    }
+
+    .center-java-section:hover {
+
+        .right-arrow-java {
+            right: -58%;
+        }
+
+        .up-arrow-java {
+            top: -18%;
+        }
+
+        .down-arrow-java {
+            bottom: -108%;
+        }
+
+        .left-bottom-arrow-java {
+            transform: translate(-10%, 140%);
+        }
+
+        .right-bottom-arrow-java {
+            transform: translate(65%, 135%);
+        }
+
+        .left-top-arrow-java {
+            transform: translate(-1%, -120%);
+        }
+
+        .right-top-arrow-java {
+            transform: translate(70%, -120%);
+        }
+
+    }
+}
+
+@media (max-width:1070px) {
+
+    .java-fourth-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 50px;
+    }
+
+    .java-third-section-box-image {
+        width: 400px;
+        height: 500px;
+    }
+
+    .around-java-container .around-java-container-bx .around-java-container-textBx {
+        transform-origin: 320px;
+    }
+
+    .right-arrow-java,
+    .left-arrow-java,
+    .up-arrow-java,
+    .down-arrow-java,
+    .left-bottom-arrow-java,
+    .right-bottom-arrow-java,
+    .left-top-arrow-java,
+    .right-top-arrow-java {
+        display: none;
+    }
+
+    .center-round-ring {
+        display: none;
+    }
+
+    .main-section-java {
+        padding-left: 50px;
+    }
+
+    .around-java-container .around-java-container-bx {
+        left: -40%;
+    }
+}
+
+@media (max-width:768px) {
+    .java-third-section-box-image {
+        margin-top: 100px;
+        width: 300px;
+        height: 300px;
+    }
+
+    .main-section-java {
+        padding-left: 20px;
+    }
+}
+.java-main-image{
+    display: none;
+}
+@media (max-width:750px) {
+
+    .java-third-section-box-image {
+        display: none;
+    }
+
+    .java-second-section-box {
+        width: 100%;
+    }
+
+    .main-section-java {
+        margin: 0 0;
+        padding-left: 0px;
+    }
+
+    .around-java-container{
+        display: none;
+
+    }
+
+    .java-main-image{
+        display: block;
+        width: 100%;
+    }
+
+}
+
+
+@media (max-width:500px) {
+
+    .java-collapse-title {   
+        font-size: 16px;
+    }
+
+    .around-java-container .around-java-container-bx {
+        left: -35%;
+    }
+
+    .java-second-section-title {
+        font-size: 20px;
+    }
+
+    .java-second-section-text {
+        font-size: 15px;
+    }
+
+    .java-second-section-text-span {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:300px) {
+
+    .java-fourth-section-button {  
+        width: 180px;  
+    }
+    
+    .java-fourth-section-button-text {
+        font-size: 14px;
+    }
+
+    .java-second-section-box {  
+        gap: 20px;
+        padding: 20px; 
+    }
+
+    .java-collapse-title {
+        font-size: 14px;
+    }
+
+    .java-collapse-content {
+        font-size: 12px;
+    }
+
+    .java-second-section-text {
+        font-size: 12px;
+    }
+
+    .java-second-section-text-span {
+        font-size: 12px;
+    }
+
+}

@@ -1,0 +1,98 @@
+.hyperCasual-modeling-box {
+    width: 383px;
+    height: 300px;
+    border-radius: 40px;
+    background: #FFFFFF;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.hyperCasual-modeling-box-top-border {
+    position: absolute;
+    top: 0;
+    left: 17%;
+    right: 17%;
+}
+
+.hyperCasual-modeling-box-bottom-border {
+    position: absolute;
+    bottom: 0;
+    left: 17%;
+    right: 17%;
+}
+
+.hyperCasual-modeling-box-right-border {
+    position: absolute;
+    right: 0;
+    top: 17%;
+    bottom: 17%;
+}
+
+.hyperCasual-modeling-box-left-border {
+    position: absolute;
+    left: 0;
+    top: 17%;
+    bottom: 17%;
+}
+
+.hyperCasual-modeling-box-around-border {
+    opacity: 0;
+}
+
+.hyperCasual-modeling-box-around-border {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+
+.hyperCasual-modeling-box:hover {
+    .hyperCasual-modeling-box-around-border {
+        opacity: 1;
+    }
+
+    .hyperCasual-modeling-box-top-border {
+        position: absolute;
+        top: -5%;
+        left: 17%;
+        right: 17%;
+    }
+
+    .hyperCasual-modeling-box-bottom-border {
+        position: absolute;
+        bottom: -5%;
+        left: 17%;
+        right: 17%;
+    }
+
+    .hyperCasual-modeling-box-right-border {
+        position: absolute;
+        right: -5%;
+        top: 17%;
+        bottom: 17%;
+    }
+
+    .hyperCasual-modeling-box-left-border {
+        position: absolute;
+        left: -5%;
+        top: 17%;
+        bottom: 17%;
+    }
+}
+
+.hyperCasual-modeling-text {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hyperCasual-modeling-title {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}

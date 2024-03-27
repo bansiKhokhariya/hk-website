@@ -1,0 +1,87 @@
+.shooter-modeling-box {
+    display: flex;
+    width: 276px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    background: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+
+.shooter-modeling-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #007B42;
+    position: absolute;
+    top: 298px;
+    border-radius: 20px;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    padding: 0 30px;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+
+    .shooter-modeling-overlay-text {
+        display: none;
+    }
+}
+
+@keyframes bounce {
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0)
+    }
+    
+    40% {
+        transform: translateY(-30px)
+    }
+
+    60% {
+        transform: translateY(-30px)
+    }
+}
+
+.shooter-modeling-box:hover .shooter-modeling-overlay {
+    top: 0;
+    height: 100%;
+    cursor: pointer;
+    animation-name: bounce;
+    box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+
+    .shooter-modeling-overlay-text {
+        display: block;
+    }
+}
+
+.shooter-modeling-overlay-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.shooter-modeling-title {
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.shooter-modeling-icon {
+    margin-bottom: 160px;
+}

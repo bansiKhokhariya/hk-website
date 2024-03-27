@@ -1,0 +1,93 @@
+.RPGGame-banner-part {
+    margin-top: -60px;
+}
+
+.RPGGame-modeling-box {
+    position: relative;
+    display: flex;
+    width: 382.5px;
+    height: 200px;
+    flex-direction: column;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    border-radius: 20px;
+    background: #E4F7F3;
+    box-shadow: 20px 20px 40px 0px rgba(0, 123, 66, 0.10) inset, -20px -20px 50px 0px rgba(255, 255, 255, 0.80) inset;
+}
+
+.RPGGame-modeling-box-title {
+    color: #007B42;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+
+.RPGGame-modeling-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 100%;
+    border-radius: 20px;
+    height: 0;
+    transition: all 0.2s ease;
+    overflow: hidden;
+    padding: 0 30px;
+}
+
+.RPGGame-modeling-box:hover .RPGGame-modeling-overlay {
+    top: 0;
+    height: 100%;
+    box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+}
+
+.RPGGame-modeling-overlay-text {
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    animation-duration: 0.9s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.RPGGame-modeling-box:hover .RPGGame-modeling-overlay-text {
+    cursor: pointer;
+    animation-name: RPGGamebounce;
+}
+
+@keyframes RPGGamebounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0)
+    }
+
+    40% {
+        transform: translateY(-20px)
+    }
+
+    60% {
+        transform: translateY(-20px)
+    }
+}
+
+@media (max-width:300px) {
+    .RPGGame-modeling-box-title {
+        font-size: 20px;
+    }
+
+    .RPGGame-modeling-overlay-text {
+        font-size: 12px;
+    }
+}

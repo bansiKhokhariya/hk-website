@@ -1,0 +1,320 @@
+.we-are-section {
+    background-color: #E4F7F3;
+    padding: 50px 0 50px 0;
+    transition: all 0.5s;
+}
+
+.we-are-section-article {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.we-are-image {
+    width: 500px;
+    height: 500px;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.47, 3.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 3.02, 0.31, -0.36);
+}
+
+.we-are-section-article:hover .we-are-image {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.we-are-text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.we-are-text-1 {
+    color: #007B42;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.we-are-text-1-black {
+    color: #000;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.we-are-text-2 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.we-are-text-3 {
+    color: #7A7D7F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.we-are-text-3-black {
+    color: #000;
+    font-weight: 600;
+}
+
+.we-are-button {
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 123, 66, 0.10);
+    padding: 10px 20px;
+    color: #007B42;
+    border: 1px solid white;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.we-are-button:hover {
+    background: #007B42;
+    color: #FFF;
+    border: 1px solid #007B42;
+    transition: all .5s ease-in-out;
+}
+
+.we-are-image-fluid {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.we-are-sm-bx-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.we-are-sm-bx {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FFF;
+    border-radius: 50px;
+    padding: 0 10px 0 0;
+}
+
+.we-are-sm-bx-text {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.we-are-button-section {
+    display: flex;
+    gap: 20px;
+}
+
+.we-are-text-3-black {
+    color: black;
+    font-weight: 600;
+}
+
+.we-are-section-article:hover {
+
+    .we-are-text-3-black,
+    .we-are-text-1-black {
+        color: #007B42;
+    }
+
+    .we-are-text-3{
+        color: black;
+    }
+
+    .social-media-icon-svg {
+        display: block;
+        animation: slideSocialIconFromBottom 0.2s forwards;
+    }
+}
+
+.social-media-icon-section {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.social-media-icon {
+    width: 130px;
+    height: 60px;
+    border-radius: 100px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media-icon-svg {
+    display: none;
+
+}
+
+@keyframes slideSocialIconFromBottom {
+    from {
+        transform: translate(0%, 100%);
+    }
+
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .we-are-text {
+        margin-top: 50px;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .we-are-image {
+        height: 400px;
+        width: 400px;
+    }
+
+    .we-are-image-fluid {
+        width: 400px;
+        height: 400px;
+    }
+
+    .we-are-text {
+        margin-top: 30px;
+        gap: 20px;
+    }
+
+    .we-are-text-1 {
+        font-size: 30px;
+    }
+
+    .we-are-text-1-black {
+        font-size: 30px;
+    }
+
+    .we-are-text-2 {
+        font-size: 20px;
+    }
+
+    .we-are-text-3 {
+        font-size: 18px;
+    }
+
+    .design-improvement-span-text {
+        font-size: 18px;
+    }
+
+    .we-are-sm-bx-text {
+        font-size: 12px;
+    }
+
+    .we-are-sm-bx-sec {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 885px) {
+
+    .social-media-icon {
+        width: 80px;
+        height: 40px;
+    }
+
+    .social-media-icon-section {
+        gap: 10px;
+    }
+
+    .social-media-icon-svg {
+        width: 12px;
+    }
+
+    .we-are-section {
+        padding: 25px 0 25px 0;
+    }
+
+    .we-are-image {
+        height: 300px;
+        width: 300px;
+    }
+
+    .we-are-image-fluid {
+        width: 300px;
+        height: 300px;
+    }
+
+    .we-are-text {
+        margin-top: 10px;
+        gap: 15px;
+    }
+
+    .we-are-text-2 {
+        font-size: 18px;
+    }
+
+    .we-are-text-3 {
+        font-size: 16px;
+    }
+
+    .design-improvement-span-text {
+        font-size: 16px;
+    }
+
+
+}
+
+@media (max-width: 700px) {
+
+    .we-are-section-article {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .we-are-section-article {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 10px
+    }
+
+    .we-are-text {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:500px) {
+    .we-are-text-1 {
+        font-size: 20px;
+    }
+
+    .we-are-text-1-black {
+        font-size: 20px;
+    }
+
+    .we-are-section-article:hover .we-are-image {
+        transform: scale(1);
+    }
+
+    .we-are-section:hover .internshipOpportunities-we-are-image {
+        transform: scale(1);
+    }
+
+    .we-are-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .playstore-svg {
+        width: 100px;
+    }
+}
+
+@media (max-width: 400px) {}

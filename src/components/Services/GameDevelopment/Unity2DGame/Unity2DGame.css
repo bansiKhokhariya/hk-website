@@ -1,0 +1,126 @@
+.unity2DGame-banner-part {
+    margin-bottom: -10px;
+}
+
+.unity2DGame-up-sec {
+    display: flex;
+    align-items: center;
+    gap: 30px
+}
+
+.unity2DGame-title {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.unity2DGame-icon {
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.unity2DGame-data-modeling-box:hover .unity2DGame-icon {
+    background-color: #E4F7F3;
+}
+
+.unity2DGame-content {
+    color: #7A7D7F;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.unity2DGame-data-modeling-box {
+    width: 382px;
+    height: 382px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    border: none;
+    border-left: 4px solid rgba(0, 191, 103, 0.20);
+    border-top: 4px solid rgba(0, 191, 103, 0.20);
+    background: #E4F7F3;
+    box-shadow: 20px 20px 40px 0px rgba(0, 123, 66, 0.10) inset, -20px -20px 50px 0px rgba(255, 255, 255, 0.80) inset;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition: border-color 0.3s;
+}
+
+.unity2DGame-data-modeling-box:hover:before,
+.unity2DGame-data-modeling-box:focus:before,
+.unity2DGame-data-modeling-box:active:before {
+    transform: scale(7);
+}
+
+.unity2DGame-data-modeling-box:hover {
+    border-left: 4px solid #FFF;
+    border-top: 4px solid #FFF;
+}
+
+.unity2DGame-data-modeling-box:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 70%;
+    left: 70%;
+    bottom: -70%;
+    right: -50%;
+    background: #FFF;
+    border-radius: 100%;
+    transform: scale(0);
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+@media (max-width:500px) {
+    .unity2DGame-data-modeling-box {
+        width: 320px;
+        height: 320px;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .unity2DGame-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .unity2DGame-content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:300px) {
+    .unity2DGame-data-modeling-box {
+        width: 260px;
+        height: 260px;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .unity2DGame-title {
+        color: #000;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+
+
+    .unity2DGame-content {
+        font-size: 14px;
+    }
+}

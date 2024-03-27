@@ -1,0 +1,84 @@
+/* .d-2 {
+    width: 382px;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    background: #E4F7F3;
+    box-shadow: 20px 20px 40px 0px rgba(0, 123, 66, 0.10) inset, -20px -20px 50px 0px rgba(255, 255, 255, 0.80) inset;
+    border-width: 0;
+
+    
+    --c: #007B42;
+    --b: .1em;
+    --d: 20px;
+    --_s: calc(var(--d) + var(--b));
+    color: var(--c);
+    border: solid #007B42;
+    border-width: var(--b) var(--_s) var(--_s) var(--b);
+    background:
+        conic-gradient(at right var(--_s) bottom var(--_s),
+            var(--c) 270deg, #0000 0) 100% border-box;
+    transform: translate(var(--d), var(--d));
+    clipPath:
+        polygon(0% 0%,
+            calc(100% - var(--d)) 0%,
+            calc(100% - var(--d)) 0%,
+            calc(100% - var(--d)) calc(100% - var(--d)),
+            0 calc(100% - var(--d)),
+            0 calc(100% - var(--d)));
+    transition: 0.5s;
+} */
+
+/* .d-2:hover {
+    transform: translate(0, 0);
+    clipPath:
+        polygon(0% 0%,
+            calc(100% - var(--d)) 0%,
+            100% var(--d),
+            100% 100%,
+            var(--d) 100%,
+            0 calc(100% - var(--d)));
+} */
+
+.unity3DGame-data-modeling-box {
+    width: 382px;
+    height: 382px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px;
+    box-shadow: 20px 20px 40px 0px rgba(0, 123, 66, 0.10) inset, -20px -20px 50px 0px rgba(255, 255, 255, 0.80) inset;
+    border-radius: 30px;
+    border-left: 4px solid rgba(0, 191, 103, 0.20);
+    border-top: 4px solid rgba(0, 191, 103, 0.20);
+    transition: 0.5s;
+}
+
+.unity3DGame-data-modeling-box:hover {
+    transform: translate(0, 0);
+    box-shadow: 20px 20px 0px 0px #007B42;
+    background: #FFF;
+    border-left: 4px solid #FFF;
+    border-top: 4px solid #FFF;
+
+    .unity2DGame-icon {
+        background-color: #E4F7F3;
+    }
+}
+
+@media (max-width:500px) {
+    .unity3DGame-data-modeling-box {
+        width: 310px;
+        height: 310px;
+        gap: 20px;
+        padding: 20px;
+    }
+}
+
+@media (max-width:300px) {
+    .unity3DGame-data-modeling-box:hover {
+        box-shadow: 10px 10px 0px 0px #007B42;
+    }
+}

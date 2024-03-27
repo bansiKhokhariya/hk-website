@@ -1,0 +1,59 @@
+.water-sec-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.water-sec-1-content {
+    border-radius: 40px;
+    background: #FFFFFF;
+    padding: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.water-reminder-icon {
+    transition: all 0.5s;
+}
+
+.water-sec-1:hover {
+    .water-reminder-icon {
+        rotate: -20deg
+    }
+
+    .casestudy-title {
+        color: #007B42;
+    }
+}
+
+
+@media (max-width:1125px) {
+    .water-reminder-icon {
+        width: 500px;
+    }
+}
+
+@media (max-width:950px) {
+    .water-sec-1 {
+        padding-top: 30px;
+    }
+
+    .water-reminder-icon {
+        width: 400px;
+    }
+}
+
+@media (max-width:750px) {
+    .water-sec-1 {
+        flex-direction: column;
+    }
+
+    .water-sec-1-content {
+        padding: 30px;
+    }
+
+    .water-reminder-icon {
+        width: 100%;
+    }
+}

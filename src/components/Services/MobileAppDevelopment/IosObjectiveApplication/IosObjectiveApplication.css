@@ -1,0 +1,29 @@
+.iosObjective-main-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.iosObjective-main-sec-bx {
+    width: 50%;
+    height: 100px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #E4F7F3;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    gap: 20px;
+    transition: all 0.3s;
+}
+
+.iosObjective-main-sec-bx:hover {
+    background: #FFF;
+}
+
+@media (max-width:750px) {
+    .iosObjective-main-sec-bx {
+        width: 100%;
+    }
+}

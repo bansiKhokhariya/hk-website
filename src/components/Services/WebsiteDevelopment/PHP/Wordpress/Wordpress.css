@@ -1,0 +1,154 @@
+.data-modeling-main-title {
+    padding: 50px 0 60px 0;
+    /* color: #007B42; */
+    /* font-size: 40px; */
+    /* font-weight: 700; */
+}
+
+.wordpress-flow-section {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    margin-bottom: 100px;
+}
+
+/* .wordpress-flow-title {
+    color: #007B42;
+    font-size: 40px;
+    font-weight: 700;
+} */
+
+.wordpress-flow {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.wordpress-flow-box-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 400px;
+}
+
+.wordpress-flow-box-2 {
+    display: flex;
+    gap: 200px;
+}
+
+.wordpress-flow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.wordpress-flow-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.design-improvement-span-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.wordpress-flow-content-text {
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+
+
+
+.php-modeling-box {
+    display: flex;
+    width: 382px;
+    height: 260px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-radius: 20px;
+    background: #FFF;
+    position: relative;
+    z-index: 1;
+}
+
+.php-modeling-overlay-text {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+    display: none;
+}
+
+.php-modeling-title {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 20px;
+}
+
+.php-modeling-box:hover {
+
+    background-color: #007B42;
+    padding: 20px;
+
+    .php-modeling-icon {
+        display: none;
+    }
+    .php-modeling-title {
+        display: none;
+    }
+    .php-modeling-overlay-text {
+        display: block;
+    }
+    
+}
+
+
+
+
+
+
+
+@media (max-width:1350px) {
+
+    .wordpress-flow-box-1 {
+        padding: 0 200px;
+    }
+
+    .wordpress-flow-box-2 {
+        gap: 20px;
+    }
+
+
+
+}
+
+@media (max-width:850px) {
+    .wordpress-flow {
+        gap: 20px;
+    }
+
+    .wordpress-flow-box-1 {
+        padding: 0 0;
+    }
+
+    .wordpress-flow-box-2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+}
+
+@media (max-width:500px) {
+    .wordpress-flow-image {
+        width: 100px;
+    }
+}

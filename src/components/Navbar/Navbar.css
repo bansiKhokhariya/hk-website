@@ -1,0 +1,818 @@
+.nav-section {
+    position: fixed;
+    background: #FFF;
+    width: 100%;
+    height: 80px;
+    z-index: 50;
+    margin-bottom: 60px;
+}
+
+.nav-section-inner {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 300px;
+    gap: 50px;
+}
+
+.nav-logo img {
+    height: 38px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-item-text {
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 40px;
+    transition: all 0.5s;
+}
+
+.nav-item-text:hover,
+.nav-item-text-active {
+    color: #FFF;
+    font-size: 16px;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #007B42;
+    border-radius: 40px;
+
+    svg path {
+        fill: white;
+    }
+}
+
+.nav-button button {
+    /* height: 39px;
+    width: 123px;
+    padding: 14px, 16px, 14px, 16px;
+    gap: 10px;
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 123, 66, 0.10);
+    color: #007B42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: 2px solid #FFF; */
+
+    width: 100%;
+    padding: 10px;
+    border-radius: 100px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 123, 66, 0.10);
+    color: #007B42;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-button button:hover {
+    background: #007B42;
+    color: #FFF;
+    transition: all .5s ease-in-out;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* service dropdown */
+
+.service-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+}
+
+.service-popup-container.closed {
+    transform: translateY(-120%);
+}
+
+.service-popup-container.open {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.service-popup-content {
+    padding: 20px;
+    display: flex;
+}
+
+.right-arrow {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid #FFF;
+    margin-top: 25px;
+    opacity: 0;
+}
+
+.right-arrow-active {
+    opacity: 1;
+}
+
+.service-menu {
+    display: inline-flex;
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    /* background-color: black; */
+}
+
+.service-menu-item {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    position: relative;
+    padding: 5px 0 5px 5px;
+    border-radius: 50px;
+    width: 350px;
+}
+
+.service-menu-item:hover {
+    cursor: pointer;
+}
+
+.service-menu-item-active {
+    background: #E4F7F3;
+    box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.10);
+}
+
+.service-item-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.service-item-icon-active {
+    background-color: #FFF;
+}
+
+.active-tab-icon {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.service-item-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.service-right-side-part {
+    background-color: #E4F7F3;
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+/*  website development content */
+
+.service-right-content {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.website-inner-develop-sec {
+    display: flex;
+    gap: 40px;
+}
+
+.website-inner-develop-sec-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.service-title {
+    color: #007B42;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.service-menu-inner {
+    display: flex;
+    gap: 10px;
+}
+
+.service-menu-inner-item {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #FFF;
+    color: #007B42;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.service-menu-inner-item:hover {
+   background-color: #007B42;
+   color: white;
+}
+
+.service-content {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.service-button {
+    display: flex;
+    padding: 16px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 123, 66, 0.10);
+    color: #007B42;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid white;
+    transition: all 0.5s;
+}
+
+.service-button:hover {
+    cursor: pointer;
+    background-color: #007B42;
+    color: #FFF;
+}
+
+.service-image {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    padding: 20px 20px 19px 19px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+/* service game development */
+.game-develop-icon-sec {
+    display: flex;
+    gap: 80px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.game-develop-icon-area {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 250px;
+}
+
+.game-develop-icon {
+    border-radius: 100px;
+    border: 4px solid #FFF;
+    background: #E4F7F3;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.game-develop-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.game-develop-icon-area:hover {
+    .game-develop-icon {
+        background: #FFF;
+    }
+
+    .game-develop-name {
+        color: #007B42;
+    }
+}
+
+/* service mobile app development section */
+.mobile-app-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.mobile-app-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 400px;
+}
+
+.mobile-app-title {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.mobile-app-content {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.mobile-develop-icon {
+    border-radius: 100px;
+    border: 4px solid #FFF;
+    background: #E4F7F3;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.mobile-app-area:hover {
+    .mobile-develop-icon {
+        background: #FFF;
+    }
+
+    .mobile-app-title {
+        color: #007B42;
+    }
+}
+
+
+
+/*********** solution container  **********/
+
+.solution-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;
+    z-index: 1000;
+    transition: transform 0.5s ease;
+}
+
+.solution-popup-container.closed {
+    transform: translateY(-140%);
+}
+
+.solution-popup-container.open {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.solution-popup-content {
+    display: flex;
+    padding: 10px 0 0 0;
+    justify-content: space-between;
+}
+
+.solution-popup-main-bx {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.solution-popup-image {
+    height: 300px;
+    width: 400px;
+}
+
+.solution-popup-bx {
+    height: 60px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 5px;
+    transition: all 0.5s;
+}
+
+.solution-popup-bx-icon-round {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.solution-popup-bx:hover {
+    background: #E4F7F3;
+    box-shadow: 0px 100px 100px 0px rgba(0, 0, 0, 0.10);
+
+    .solution-popup-bx-icon path {
+        stroke: #007B42
+    }
+
+    .solution-popup-text {
+        font-weight: 600;
+    }
+}
+
+.solution-popup-text {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+/*********** company container  **********/
+
+.company-about-us-sec-drawer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.company-aboutus-img {
+    width: 100%;
+}
+
+
+/* Media query for smaller screens */
+
+@media(max-width:1870px) {
+    .mobile-app-section {
+        justify-content: center;
+    }
+
+    .mobile-app-area {
+        width: 300px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .nav-section-inner {
+        margin: 0 150px;
+    }
+    .mobile-app-area {
+        width: 250px;
+    }
+}
+
+@media (max-width: 1550px) {
+
+    .solution-popup-image {
+        width: 100%;
+    }
+
+    .solution-popup-content {
+        display: flex;
+        padding: 10px 30px 10px 30px;
+        justify-content: space-between;
+    }
+
+    .mobile-app-area {
+        width: 300px;
+    }
+
+    .game-develop-icon-sec {
+        gap: 40px;
+    }
+
+    .service-right-side-part {
+        background-color: #E4F7F3;
+        display: flex;
+    }
+
+    .service-title {
+        font-size: 18px;
+    }
+
+    .service-menu-inner-item {
+        font-size: 12px;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .game-develop-icon-area {
+        width: 200px;
+    }
+
+    .game-develop-icon {
+        border: 2px solid #FFF;
+        width: 50px;
+        height: 50px;
+    }
+
+    .game-develop-name {
+        font-size: 18px;
+    }
+
+    .mobile-app-content {
+        font-size: 12px;
+    }
+
+    .mobile-develop-icon {
+        border: 2px solid #FFF;
+        width: 50px;
+        height: 50px;
+    }
+
+    .mobile-app-section {
+        gap: 20px;
+    }
+
+    /* .mobile-app-area {
+        gap: 10px;
+        width: 200px;
+    } */
+
+    .website-inner-develop-sec {
+        gap: 20px;
+    }
+
+    .service-menu-item {
+        width: 250px;
+    }
+
+    .service-item-text {
+        font-size: 14px;
+    }
+
+    .service-content {
+        font-size: 12px;
+    }
+
+    .service-right-content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 1425px) {
+
+    .mobile-app-area {
+        width: 220px;
+    }
+    
+    .nav-section-inner {
+        margin: 0 50px;
+    }
+
+    .nav-menu ul {
+        gap: 10px;
+    }
+
+    .nav-item-text {
+        font-size: 14px;
+        gap: 5px;
+    }
+
+    .nav-item-text:hover,
+    .nav-item-text-active {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 1215px) {
+    .nav-section-inner {
+        margin: 0 10px;
+        gap: 0;
+    }
+
+    .game-develop-name {
+        font-size: 12px;
+    }
+
+    .game-develop-icon-area {
+        width: 150px;
+    }
+
+    .mobile-app-area {
+        gap: 10px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 1120px) {
+
+    .nav-menu ul {
+        gap: 0px;
+    }
+
+    .nav-item-text {
+        font-size: 12px;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .nav-item-text:hover,
+    .nav-item-text-active {
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .nav-button button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:1020px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* @media (max-width:750px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+} */
+
+@media (max-width: 500px) {
+    .nav-section {
+        width: 100%;
+    }
+}
+
+
+/* small screen navbar popup */
+.popup-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 80px;
+    left: -100%;
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 123, 66, 0.10);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    transition: left 0.3s ease;
+}
+
+.popup-container.open {
+    left: 0;
+}
+
+.popup-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popup-container li {
+    padding: 10px;
+    /* cursor: pointer; */
+}
+
+.main-nav-inner-list,
+.sub-nav-list,
+.sub-nav-inner-list {
+    overflow: hidden;
+    max-height: 0;
+    line-height: 0;
+    transition: max-height 0.3s ease-in-out;
+}
+
+.main-nav-item {
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-nav-inner-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(51, 50, 50);
+}
+
+.sub-nav-item {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(70, 69, 69);
+}
+
+.sub-nav-inner-item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(97, 95, 95);
+}
+
+.main-nav-item:hover .main-nav-inner-list {
+    max-height: 1000px;
+    line-height: 10px;
+}
+
+.main-nav-inner-item:hover .sub-nav-list {
+    max-height: 1000px;
+    line-height: 10px;
+}
+
+.sub-nav-item:hover .sub-nav-inner-list {
+    max-height: 1000px;
+    line-height: 5px;
+}
+
+.close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+}

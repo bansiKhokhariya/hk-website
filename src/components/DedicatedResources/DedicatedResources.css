@@ -1,0 +1,1441 @@
+.dedicated-section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.dedicated-section-button {
+    padding: 20px;
+    background-color: #FFF;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.dedicated-section-button:hover {
+    background-color: #007B42;
+    color: #FFF;
+    box-shadow: 0px 10px 20px 0px #007B4233;
+}
+
+.dedicated-section-1-main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #FFF;
+    width: 100%;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.dedicated-four-box-section {
+    display: flex;
+}
+
+.dedicated-four-box {
+    width: 25%;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transition: all 0.3s;
+}
+
+.dedicated-four-box:hover {
+    background-color: #E4F7F3;
+
+    .dedicated-four-box-title {
+        color: #007B42;
+    }
+}
+
+.dedicated-section-1-title {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.dedicated-section-1-text {
+    font-size: 25px;
+    font-weight: 400;
+    color: #7A7D7F;
+}
+
+.dedicated-four-box-title {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.dedicated-four-box-text {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    color: #7A7D7F;
+}
+
+.dedicated-two-box-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dedicated-two-box-section:hover {
+    .dedicatedResources-1-image {
+        transform: scale(1.2);
+    }
+}
+
+.dedicated-two-box-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.dedicatedResources-1-image,
+.dedicatedResources-1-image-container {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    transition: all 0.5s;
+}
+
+.dedicated-section-1-main-container:hover {
+    .dedicated-section-1-title {
+        color: #007B42;
+    }
+}
+
+/* section 2 */
+.dedicated-section-2 {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dedicated-section-2-box-area {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.dedicated-section-2-content {
+    position: relative;
+    max-width: 400px;
+    max-height: 800px;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.dedicated-2-content-image {
+    width: 100%;
+}
+
+.dedicated-2-content-details {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease-in-out 0s;
+    top: 80%;
+    background: #00000088;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    padding: 30px;
+    gap: 30px;
+}
+
+.dedicated-section-2-content:hover .dedicated-2-content-details {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+.dedicated-2-content-details-title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.dedicated-2-content-details-text {
+    font-size: 20px;
+}
+
+/* section 3 */
+.dedicated-section-3 {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+.dedicated-section-3-up {
+    display: flex;
+    gap: 20px;
+}
+
+.dedicated-section-3-up-box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+
+.dedicated-section-3-up-develop {
+    display: flex;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.dedicated-section-3-up-develop-text {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.dedicated-section-3-sm-bx {
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 600;
+    border-radius: 30px;
+    gap: 20px;
+    background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+    height: 100px;
+    padding: 30px;
+    transition: all 0.5s;
+}
+
+.dedicated-section-3-sm-bx:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+}
+
+.dedicated-section-3-down {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.dedicated-section-3-image-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.dedicated-section-3-image-overlay {
+    position: absolute;
+    top: -50%;
+    right: -100px;
+    width: 50%;
+    height: 200%;
+    background: #00000080;
+    backdrop-filter: blur(10px);
+    transform: rotate(-25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 150px 0 50px;
+    border-left: 2px solid #FFFFFF;
+    color: #FFF;
+}
+
+.dedicated-section-3-image-overlay-container {
+    transform: rotate(25deg);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dedicated-section-3-image-overlay-left {
+    position: absolute;
+    top: -50%;
+    left: -100px;
+    width: 50%;
+    height: 200%;
+    background: #00000080;
+    backdrop-filter: blur(10px);
+    transform: rotate(25deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 0 150px;
+    border-left: 2px solid #FFFFFF;
+    color: #FFF;
+}
+
+.dedicated-section-3-image-overlay-container-left {
+    transform: rotate(-25deg);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.dedicated-section-3-image {
+    transition: all 0.5s;
+}
+
+.dedicated-section-3-image-box:hover {
+    .dedicated-section-3-image {
+        transform: scale(1.2);
+    }
+}
+
+.dedicated-section-3-image-overlay-title {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.dedicated-section-3-image-overlay-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+/* section 4 */
+.dedicated-section-4 {
+    padding: 30px 0;
+    /* gap: 40px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.hiring-model-section {
+    display: flex;
+}
+
+.hiring-model-section-bx {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.hiring-model-title-section {
+    color: #007B42;
+    margin-top: 100px;
+}
+
+.hiring-model-title {
+    font-size: 100px;
+    font-weight: 700;
+}
+
+.hiring-model-title-span {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.hiring-model-text {
+    border: 1px solid rgb(63, 78, 193);
+    height: 100%;
+    border-radius: 40px;
+    border: 4px;
+    gap: 10px;
+    padding: 60px 40px;
+    background-color: #FFFFFF80;
+    backdrop-filter: blur(10px);
+    border: 4px solid white;
+    margin-top: 400px;
+    margin-left: -180px;
+    font-size: 20px;
+}
+
+.hiring-model-image {
+    width: 100%;
+}
+
+.hiring-model-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #CEEBE2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hiring-model-section-bx-up {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hiring-model-section-bx-down {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hiring-model-number {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    font-weight: 700;
+    color: #007B42;
+}
+
+.hiring-model-bx-title {
+    font-size: 35px;
+    font-weight: 700;
+    color: #007B42;
+}
+
+.hiring-model-bx-text-bg {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.hiring-model-bx-text {
+    font-size: 20px;
+    color: #7A7D7F;
+}
+
+/* section 5 */
+.dedicated-section-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.technology-tools-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.technology-tools-section-bx {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px 10px 10px;
+    border-radius: 100px;
+}
+
+.technology-tools-section-bx:hover {
+    background-color: #CEEBE2;
+}
+
+.technology-tools-down {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.technology-tools-section-bx-svg {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    background-color: #FFF;
+    border-radius: 50%;
+    box-shadow: 0px 20px 40px 0px #007B421A;
+}
+
+
+/* section 6 */
+.dedicated-section-6 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.hiring-process-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.hiring-process-box {
+    display: flex;
+    /* gap: 30px; */
+    align-items: center;
+}
+
+.hiring-process-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 50%;
+}
+
+.hiring-process-left-container {
+    padding-right: 30px;
+}
+
+.hiring-process-right-container {
+    padding-left: 30px;
+}
+
+.hiring-process-section-1-text-black {
+    font-size: 28px;
+    font-weight: 600;
+    color: black;
+}
+
+.hiring-process-section-1-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #7A7D7F;
+}
+
+.hiring-process-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #007B42;
+}
+
+.hiring-process-image {
+    transition: all 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: cubic-bezier(0.47, 3.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 3.02, 0.31, -0.36);
+}
+
+.hiring-process-image-container {
+    overflow: hidden;
+    border-top-left-radius: 100%;
+}
+
+.hiring-process-image-container-right {
+    border-bottom-right-radius: 100%;
+    overflow: hidden;
+}
+
+.hiring-process-box:hover {
+    .hiring-process-image {
+        transform: scale(1.1);
+    }
+}
+
+/* section 7 */
+.dedicated-section-7 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.dedicated-testimonial-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #E4F7F3;
+    border-radius: 30px;
+    padding: 20px 100px;
+    z-index: 1;
+    margin-right: -100px;
+}
+
+
+/* section 8 */
+.dedicated-section-8 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+
+.security-box-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.security-box-left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: -100px;
+}
+
+.security-box-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.security-box-right:hover,
+.security-box-left:hover {
+    .security-box-svg-shadow {
+        display: block;
+    }
+
+    .security-box-svg {
+        display: none;
+    }
+}
+
+.security-box-svg {
+    transition: all 0.5s;
+}
+
+.security-box-right-third {
+    margin-top: -100px;
+}
+
+.security-box-svg-shadow {
+    display: none;
+    transition: all 0.5s;
+}
+
+
+/* section 9 */
+.dedicated-section-9 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.communication-section-area {
+    display: flex;
+    gap: 30px;
+    /* align-items: center; */
+}
+
+.communication-section-area-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.communication-bx-sm {
+    padding: 20px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.communication-bx-sm-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.communication-bx-sm-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #7A7D7F;
+}
+
+.communication-image {
+    width: 420px;
+    height: 500px;
+    transition: all 0.5s;
+}
+
+.communication-image-area {
+    width: 520px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.dedicated-section-9:hover {
+    .communication-image {
+        transform: scale(1.2);
+    }
+
+    .communication-bx-sm-title {
+        color: #007B42;
+    }
+}
+
+
+/* section 10 */
+
+.dedicated-section-10 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.cost-box {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.cost-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #007B42;
+}
+
+.cost-text {
+    font-size: 20px;
+    font-weight: 400;
+    color: #7A7D7F;
+}
+
+.cost-black-text {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.cost-image {
+    /* width: 100%; */
+}
+
+
+/* section 13 */
+.elevate-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.elevate-image {
+    /* width: 100%; */
+}
+
+.elevate-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    background-color: #FFF;
+    padding: 40px;
+}
+
+.elevate-button {
+    background-color: #E4F7F3;
+    width: 390px;
+    height: 60px;
+    top: 19.95px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.elevate-button:hover {
+    background-color: #007B42;
+    color: #FFF;
+    box-shadow: 0px 50px 50px 0px #007B4233;
+    transform: translateY(-10px);
+}
+
+.elevate-model-bx-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #007B42;
+}
+
+
+@media (max-width:1550px) {
+
+    .security-box-svg,
+    .security-box-svg-shadow {
+        width: 750px;
+    }
+
+    .security-box-left,
+    .security-box-right-third {
+        margin-top: -150px;
+    }
+
+    .hiring-process-section-1-text-black {
+        font-size: 22px;
+    }
+
+    .hiring-process-section-1-text {
+        font-size: 16px;
+    }
+
+    .hiring-process-container {
+        gap: 20px;
+    }
+
+    .hiring-process-title {
+        font-size: 30px;
+    }
+
+
+    .technology-tools-down {
+        gap: 40px;
+    }
+
+    .hiring-model-title {
+        font-size: 60px;
+    }
+
+    .hiring-model-title-span {
+        font-size: 40px;
+    }
+
+    .hiring-model-text {
+        margin-top: 500px;
+        margin-left: -180px;
+        font-size: 20px;
+        padding: 40px 20px;
+    }
+
+    .dedicated-section-3-image-overlay-title {
+        font-size: 22px;
+    }
+
+    .dedicated-section-3-image-overlay-text {
+        font-size: 16px;
+    }
+
+    .dedicated-section-1-main-container {
+        gap: 30px;
+    }
+
+    .dedicated-section-1-title {
+        font-size: 30px;
+    }
+
+    .dedicated-section-1-text {
+        font-size: 16px;
+    }
+
+    .dedicated-four-box {
+        padding: 30px 10px;
+        gap: 20px;
+    }
+
+    .dedicated-four-box-title {
+        font-size: 20px;
+    }
+
+    .dedicated-four-box-text {
+        font-size: 14px;
+    }
+
+    .dedicatedResources-1-image,
+    .dedicatedResources-1-image-container {
+        width: 400px;
+        height: 400px;
+    }
+
+    .dedicated-section-3-sm-bx {
+        font-size: 20px;
+        height: 80px;
+    }
+
+    .dedicated-section-3-up-box {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width:1150px) {
+
+    .cost-image {
+        width: 100%;
+    }
+
+    .elevate-model-bx-title {
+        font-size: 30px;
+    }
+
+    .cost-box {
+        gap: 40px;
+    }
+
+    .cost-container {
+        gap: 20px;
+    }
+
+    .cost-title {
+        font-size: 25px;
+    }
+
+    .cost-text {
+        font-size: 18px;
+    }
+
+    .cost-black-text {
+        font-size: 20px;
+    }
+
+    .communication-bx-sm-title {
+        font-size: 18px;
+    }
+
+    .communication-bx-sm-text {
+        font-size: 14px;
+    }
+
+    .security-box-svg,
+    .security-box-svg-shadow {
+        width: 650px;
+    }
+
+    .security-box-left,
+    .security-box-right-third {
+        margin-top: -200px;
+    }
+
+    .dedicated-testimonial-part {
+        padding: 20px 20px;
+        margin-right: -100px;
+    }
+
+    .technology-tools-section-bx-svg {
+        width: 70px;
+        height: 70px;
+    }
+
+    .technology-tools-down {
+        gap: 20px;
+    }
+
+    .technology-tools-section-bx {
+        gap: 20px;
+        font-size: 18px;
+    }
+
+    .hiring-model-title {
+        font-size: 40px;
+    }
+
+    .hiring-model-title-span {
+        font-size: 20px;
+    }
+
+    .hiring-model-image {
+        margin-left: -100px;
+    }
+
+    .dedicated-section-3-image-overlay-container-left,
+    .dedicated-section-3-image-overlay-container {
+        gap: 20px;
+    }
+
+    .dedicated-section-3-image-overlay-text {
+        font-size: 12px;
+    }
+
+    .dedicated-2-content-details-title,
+    .dedicated-section-3-image-overlay-title {
+        font-size: 20px;
+    }
+
+    .dedicated-2-content-details-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:1020px) {
+
+    .elevate-model-bx-title {
+        font-size: 20px;
+    }
+
+    .elevate-image {
+        width: 300px;
+        height: 600px;
+    }
+
+    .elevate-button {
+        width: 250px;
+        height: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.5s;
+    }
+
+    .communication-bx-sm-title {
+        font-size: 16px;
+    }
+
+    .communication-bx-sm-text {
+        font-size: 12px;
+    }
+
+    .security-box-right-one {
+        margin-top: -100px;
+    }
+
+    .security-box-svg,
+    .security-box-svg-shadow {
+        width: 500px;
+    }
+
+    .security-box-left,
+    .security-box-right-third {
+        margin-top: -250px;
+    }
+
+    .dedicated-testimonial-part {
+        gap: 10px;
+        margin-right: -50px;
+    }
+
+    .hiring-process-section-1-text-black {
+        font-size: 18px;
+    }
+
+    .hiring-process-section-1-text {
+        font-size: 12px;
+    }
+
+    .hiring-process-title {
+        font-size: 20px;
+    }
+
+    .hiring-model-text {
+        font-size: 12px;
+        padding: 20px 10px;
+        margin-top: 600px;
+        margin-left: -280px;
+    }
+
+    .hiring-model-image {
+        margin-left: -120px;
+    }
+
+    .dedicated-section-3-image-overlay-title {
+        font-size: 18px;
+    }
+
+    .dedicated-section-3-image-overlay-text {
+        font-size: 10px;
+    }
+
+    .dedicated-section-3-image-overlay-left {
+        padding: 0 50px 20px 110px;
+    }
+
+    .dedicated-section-3-image-overlay {
+
+        padding: 0 110px 20px 30px;
+    }
+
+    .dedicated-section-3-sm-bx {
+        font-size: 18px;
+    }
+
+    .dedicated-section-3-up-develop {
+        font-size: 16px;
+    }
+
+    .dedicated-section-3-up-develop-text {
+        font-size: 12px;
+    }
+
+    .dedicated-section-1-main-container {
+        gap: 20px;
+    }
+
+    .dedicated-section-1-title {
+        font-size: 25px;
+    }
+
+    .dedicated-section-1-text {
+        font-size: 14px;
+    }
+
+    .dedicated-four-box {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .dedicated-four-box-title {
+        font-size: 16px;
+    }
+
+    .dedicated-four-box-text {
+        font-size: 12px;
+    }
+
+    .dedicatedResources-1-image,
+    .dedicatedResources-1-image-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .dedicated-section-button {
+        font-size: 18px;
+    }
+
+    .dedicated-2-content-details-title {
+        font-size: 18px;
+    }
+
+    .dedicated-2-content-details-text {
+        font-size: 12px;
+    }
+
+    .dedicated-2-content-details {
+        gap: 20px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .elevate-section {
+        flex-wrap: wrap;
+    }
+
+    .elevate-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .elevate-container {
+        gap: 20px;
+        padding: 20px;
+        border-radius: 20px;
+    }
+
+    .cost-main-section {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .cost-box {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .cost-title {
+        font-size: 20px;
+    }
+
+    .cost-text {
+        font-size: 12px;
+    }
+
+    .cost-black-text {
+        font-size: 18px;
+    }
+
+
+    .communication-section-area-1 {
+        gap: 10px;
+    }
+
+    .communication-section-area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .communication-image,
+    .communication-image-area {
+        width: 300px;
+        height: 350px;
+    }
+
+    .security-box-right,
+    .security-box-left {
+        justify-content: center;
+    }
+
+    .security-box-right-one {
+        margin-top: 0;
+    }
+
+    .security-box-svg,
+    .security-box-svg-shadow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .security-box-left,
+    .security-box-right-third {
+        margin-top: 0;
+    }
+
+    .dedicated-testimonial-part {
+        margin-right: 0;
+    }
+
+    .hiring-process-section {
+        gap: 30px;
+    }
+
+    .hiring-process-container {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .hiring-process-box {
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hiring-process-left-container {
+        padding-right: 0;
+    }
+
+    .hiring-process-right-container {
+        padding-left: 0;
+    }
+
+    .hiring-model-section-bx,
+    .hiring-model-section-bx-up {
+        gap: 20px;
+    }
+
+    .hiring-model-section-bx-down {
+        gap: 10px;
+    }
+
+    .hiring-model-number {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .hiring-model-bx-title {
+        font-size: 20px;
+    }
+
+    .hiring-model-bx-text-bg {
+        font-size: 18px;
+    }
+
+    .hiring-model-bx-text {
+        font-size: 14px;
+    }
+
+
+    .hiring-model-image {
+        display: none;
+        margin-left: 0;
+    }
+
+    .hiring-model-text {
+        border-radius: 20px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .hiring-model-title-section {
+        margin-top: 0;
+    }
+
+    .hiring-model-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    .dedicated-section-3-image-box {
+        border-radius: 20px;
+        height: 200px;
+    }
+
+    .dedicated-section-3-image-overlay-left {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(0);
+        padding: 50px;
+        border-radius: 20px;
+        border-left: 0 solid #FFFFFF;
+    }
+
+    .dedicated-section-3-image-overlay-container-left {
+        transform: rotate(0);
+        gap: 20px;
+    }
+
+    .dedicated-section-3-image-overlay {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        transform: rotate(0);
+        padding: 50px;
+        border-left: 0 solid #FFFFFF;
+    }
+
+    .dedicated-section-3-image-overlay-container {
+        transform: rotate(0);
+        gap: 20px;
+    }
+
+
+    .dedicated-section-3-up {
+        flex-wrap: wrap;
+    }
+
+    .dedicated-section-3-sm-bx {
+        font-size: 14px;
+        height: 50px;
+        border-radius: 20px;
+    }
+
+    .dedicated-section-3-svg {
+        width: 20px;
+    }
+
+    .dedicated-four-box-section,
+    .dedicated-two-box-section {
+        flex-wrap: wrap;
+    }
+
+    .dedicated-four-box {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .dedicated-two-box-section {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dedicated-two-box-container {
+        width: 100%;
+    }
+
+    .dedicated-section-button {
+        font-size: 16px;
+    }
+
+    .dedicated-section-2-box-area {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dedicated-section-2-content {
+        max-height: 500px;
+    }
+
+    .dedicated-2-content-details {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        transform: translate(-50%, -50%);
+        background: #00000088;
+        backdrop-filter: blur(20px);
+        display: flex;
+        flex-direction: column;
+        color: #FFF;
+        padding: 30px;
+        gap: 20px;
+    }
+
+    .dedicated-2-content-details-title {
+        font-size: 24px;
+    }
+
+    .dedicated-2-content-details-text {
+        font-size: 14px;
+    }
+
+    .dedicated-section-2 {
+        gap: 20px;
+    }
+
+    .dedicated-section-3-up-box {
+        width: 100%;
+    }
+
+}
+
+@media (max-width:300px) {
+
+    .hiring-model-number {
+        width: 40px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .dedicated-section-3-image-box {
+        height: 250px;
+    }
+
+    .dedicated-section-3-image-overlay-left,
+    .dedicated-section-3-image-overlay {
+        padding: 20px;
+    }
+
+    .dedicated-section-1-title {
+        font-size: 20px;
+    }
+
+    .dedicated-section-1-text {
+        font-size: 12px;
+    }
+
+    .dedicated-four-box-title {
+        font-size: 14px;
+    }
+
+    .dedicated-four-box-text {
+        font-size: 10px;
+    }
+
+    .dedicatedResources-1-image,
+    .dedicatedResources-1-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .dedicated-section-1-main-container {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .dedicated-section-button {
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .dedicated-2-content-details-title {
+        font-size: 20px;
+    }
+
+    .dedicated-2-content-details-text {
+        font-size: 12px;
+    }
+}

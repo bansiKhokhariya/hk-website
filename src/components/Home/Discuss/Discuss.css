@@ -1,0 +1,179 @@
+.discuss-main-section {
+    padding: 50px 0 50px 0;
+}
+
+.discuss-section {
+    display: flex;
+    gap: 60px;
+    background: #FFF;
+    border-radius: 20px;
+}
+
+.discuss-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 22px;
+}
+
+.discuss-title {
+    color: #007B42;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.discuss-text-1 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.discuss-button button {
+    display: inline-flex;
+    padding: 15px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    border: 2px solid rgba(0, 123, 66, 0.40);
+    background: #FFF;
+    box-shadow: 0px 10px 20px 0px rgba(0, 123, 66, 0.10);
+    color: #007B42;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.discuss-button button:hover {
+    background-color: #007B42;
+    color: #FFF;
+}
+
+.discuss-image {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    background: linear-gradient(100deg, #005A31, #007B42);
+    transition: transform .5s ease;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.discuss-section:hover {
+    .discuss-image {
+        transform: scale(1.2);
+    }
+
+    .discuss-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    .discuss-image::before {
+        opacity: 1;
+        transition-delay: 0.25s;
+        right: 0;
+        animation: expandFromTopRight 0.4s ease-in-out forwards;
+        z-index: -1;
+    }
+}
+
+.discuss-image::before {
+    border-radius: 50%;
+    position: absolute;
+    background: #01502b;
+    right: -50px;
+    top: -50px;
+    content: '';
+    width: 180px;
+    height: 180px;
+    border: 40px solid #005A31;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+@keyframes expandFromTopRight {
+    0% {
+        width: 0;
+        height: 0;
+        top: 0;
+        right: 0;
+    }
+
+    100% {
+        width: 180px;
+        height: 180px;
+        top: -50px;
+        right: -50px;
+    }
+}
+
+.discuss-icon {
+    width: 100px;
+    height: 100px;
+    transition: transform .0.5s ease;
+}
+
+
+@media (max-width: 1230px) {
+    .discuss-section {
+        gap: 25px;
+    }
+    .discuss-image {
+        height: 200px;
+        width: 220px;
+    }
+    .discuss-icon {
+        width: 60px;
+        height: 60px;
+    }
+    .discuss-section:hover {
+        .discuss-icon {
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .discuss-title {
+        font-size: 25px;
+    }
+    
+    .discuss-text-1 {
+        font-size: 18px;
+    }
+    .discuss-button button {    
+        padding: 5px 10px;    
+        font-size: 16px;     
+    }
+    .discuss-right-side {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 850px) { 
+    .discuss-image {
+        height: 200px;
+        width: 300px;
+    } 
+}
+
+@media (max-width: 650px) {
+    .discuss-section {
+        padding: 20px; 
+    }
+    .discuss-image {
+        display: none;
+    }
+    .discuss-title {
+        font-size: 20px;
+    }
+    .discuss-text-1 {
+        font-size: 16px;
+    }
+}

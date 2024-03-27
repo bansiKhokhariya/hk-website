@@ -1,0 +1,42 @@
+
+.node-modeling-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+}
+
+.node-modeling-box{
+    display: flex;
+    width: 382px;
+    height: 260px;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.node-modeling-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007B42;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition: right 0.5s ease;
+    padding: 0 30px;
+}
+
+.node-modeling-box:hover .node-modeling-overlay {
+    right: 0; 
+}
+

@@ -1,0 +1,433 @@
+.mobileAppDevelopment-main-section {
+    background-color: #E4F7F3;
+    height: 850px;
+}
+
+.mobileAppDevelopment-main-inner-section {
+    /* background: url("/frame/mobileAppDevelopment-frame.webp"); */
+    background: url("../../../../public/frame/mobileAppDevelopment-frame.webp");
+}
+
+.mobileAppDevelopment-box-section {
+    padding: 220px 500px 100px 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.mobileApp-technology-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.mobileAppDevelopment-box .mobileAppDevelopment-box-icon {
+    position: relative;
+    z-index: 2;
+}
+
+.mobileAppDevelopment-box-disabled {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .mobileAppDevelopment-box-icon {
+        position: relative;
+        z-index: 2;
+    }
+
+    .mobileAppDevelopment-box-icon path {
+        stroke: none;
+    }
+
+    .mobileAppDevelopment-box-icon:first-child {
+        fill: white;
+    }
+}
+
+.mobileAppDevelopment-box:hover {
+    .mobileAppDevelopment-box-icon path {
+        stroke: none;
+    }
+
+    .mobileAppDevelopment-box-icon:first-child {
+        fill: white;
+    }
+}
+
+.mobileAppDevelopment-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.mobileAppDevelopment-content-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mobileAppDevelopment-content-title-left {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.mobileAppDevelopment-content-text-left {
+    color: #7A7D7F;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mobileAppDevelopment-content-title-right {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.mobileAppDevelopment-content-text-right {
+    color: #7A7D7F;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.mobileAppDevelopment-content-title-center {
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.mobileAppDevelopment-content-text-center {
+    color: #7A7D7F;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* mobileAppDevelopment box 1 */
+.mobileAppDevelopment-content-1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: -100%;
+    transition: right 0.3s ease;
+    margin-right: 240px;
+    visibility: hidden;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.mobileAppDevelopment-box-1:hover .mobileAppDevelopment-content-1 {
+    right: 0;
+    visibility: visible;
+}
+
+.mobileAppDevelopment-content-1-show {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    margin-right: 570px;
+}
+
+
+/* mobileAppDevelopment box 2 */
+.mobileAppDevelopment-content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    height: 100%;
+    transition: top 0.3s ease;
+    overflow: hidden;
+    margin-top: -240px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.mobileAppDevelopment-box-2:hover .mobileAppDevelopment-content-2 {
+    top: 0;
+    height: 100%;
+    visibility: visible;
+}
+
+.mobileAppDevelopment-content-2-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    margin-top: -480px;
+}
+
+/* mobileAppDevelopment box 3 */
+.mobileAppDevelopment-content-3 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    transition: left 0.3s ease;
+    overflow: hidden;
+    margin-left: 240px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.mobileAppDevelopment-box-3:hover .mobileAppDevelopment-content-3 {
+    left: 0;
+    visibility: visible
+}
+
+.mobileAppDevelopment-content-3-show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    margin-left: 570px;
+}
+
+/* mobileAppDevelopment box 4 */
+.mobileAppDevelopment-content-4 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, -10%);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;
+    z-index: 1;
+    margin-right: 320px;
+    margin-top: 50px;
+}
+
+.mobileAppDevelopment-box-4:hover .mobileAppDevelopment-content-4 {
+    transform: translate(30%, 80%);
+    visibility: visible;
+}
+
+.mobileAppDevelopment-content-4-show {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    margin-right: 550px;
+    margin-top: 215px;
+}
+
+
+/* mobileAppDevelopment box 5 */
+.mobileAppDevelopment-content-5 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(10%, -100%);
+    transition: transform 0.3s ease-in-out;
+    visibility: hidden;
+    z-index: 1;
+    margin-left: -10px;
+    margin-top: 190px;
+}
+
+.mobileAppDevelopment-box-5:hover .mobileAppDevelopment-content-5 {
+    transform: translate(80%, -30%);
+    visibility: visible;
+}
+
+.mobileAppDevelopment-content-5-show {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    position: absolute;
+    margin-left: 550px;
+    margin-top: 190px;
+}
+
+
+.mobileApp-main-image {
+    display: none;
+}
+
+
+@media (max-width:1750px) {
+    .mobileAppDevelopment-box-section {
+        padding: 220px 350px 100px 350px;
+        gap: 20px;
+    }
+}
+
+
+@media (max-width:1450px) {
+    .mobileAppDevelopment-box-section {
+        padding: 220px 250px 100px 250px;
+        gap: 1px;
+    }
+
+    .mobileApp-technology-section {
+        gap: 40px;
+        padding: 20px;
+    }
+
+    .mobileAppDevelopment-box-icon {
+        width: 230px;
+        height: 170px;
+    }
+
+    .mobileAppDevelopment-content-sec {
+        gap: 10px;
+    }
+
+    .mobileAppDevelopment-content-title-left,
+    .mobileAppDevelopment-content-title-right,
+    .mobileAppDevelopment-content-title-center {
+        font-size: 18px;
+    }
+
+    .mobileAppDevelopment-content-text-left,
+    .mobileAppDevelopment-content-text-right,
+    .mobileAppDevelopment-content-text-center {
+        font-size: 12px;
+    }
+
+
+    /* mobileAppDevelopment box 1 */
+    .mobileAppDevelopment-content-1 {
+        margin-right: 200px;
+    }
+
+    .mobileAppDevelopment-content-1-show {
+        margin-right: 380px;
+    }
+
+    /* mobileAppDevelopment box 2 */
+    .mobileAppDevelopment-content-2 {
+        margin-top: -180px;
+    }
+
+    .mobileAppDevelopment-content-2-show {
+        margin-top: -360px;
+    }
+
+    /* mobileAppDevelopment box 3 */
+    .mobileAppDevelopment-content-3 {
+        margin-left: 200px;
+    }
+
+    .mobileAppDevelopment-content-3-show {
+        margin-right: 200px;
+    }
+
+    /* mobileAppDevelopment box 4 */
+    .mobileAppDevelopment-box-4:hover .mobileAppDevelopment-content-4 {
+        transform: translate(60%, 30%);
+    }
+
+    .mobileAppDevelopment-content-4-show {
+        margin-right: 370px;
+        margin-top: 120px;
+    }
+
+    /* mobileAppDevelopment box 5 */
+    .mobileAppDevelopment-box-5:hover .mobileAppDevelopment-content-5 {
+        transform: translate(100%, -70%);
+    }
+
+    .mobileAppDevelopment-content-5-show {
+        margin-left: 370px;
+        margin-top: 150px;
+    }
+
+    .arrow-mobileAppBox {
+        height: 50px;
+    }
+
+    .arrow-mobileAppBox-first {
+        width: 50px;
+    }
+
+    .mobileAppDevelopment-content-1,
+    .mobileAppDevelopment-content-1-show,
+    .mobileAppDevelopment-content-2,
+    .mobileAppDevelopment-content-2-show,
+    .mobileAppDevelopment-content-3,
+    .mobileAppDevelopment-content-3-show,
+    .mobileAppDevelopment-content-4,
+    .mobileAppDevelopment-content-4-show,
+    .mobileAppDevelopment-content-5,
+    .mobileAppDevelopment-content-5-show {
+        width: 200px;
+    }
+}
+
+@media (max-width:1210px) {
+    .mobileAppDevelopment-box-section {
+        padding: 220px 200px 100px 200px;
+    }
+}
+
+@media (max-width:1110px) {
+    .mobileAppDevelopment-box-section {
+        padding: 220px 150px 100px 150px;
+    }
+
+    .mobileAppDevelopment-box-icon {
+        width: 200px;
+        height: 130px;
+    }
+}
+
+@media (max-width:1000px) {
+
+    .mobileAppDevelopment-main-section {
+        height: 100%;
+    }
+
+    .mobileAppDevelopment-main-inner-section {
+        display: none;
+    }
+
+    .mobileApp-main-image {
+        display: block;
+        width: 100%;
+        padding: 0 50px 40px 50px;
+    }
+}

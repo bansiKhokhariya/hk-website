@@ -1,0 +1,254 @@
+.people-stack-bg-image {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    transition: all 0.5s;
+}
+
+.people-stack-bg-bx {
+    position: relative;
+}
+
+.people-stack-bg-bx .people-text-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: absolute;
+    left: 0;
+    top: 8%;
+    bottom: 0;
+    right: 0;
+    margin: 0 300px 0 300px;
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.people-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.people-header-left-header {
+    font-size: 40px;
+    color: #007B42;
+    font-weight: 600;
+}
+
+.people-header-right-header {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000;
+}
+
+.people-text {
+    color: #7A7D7F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.people-box-section {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    height: 500px;
+    padding: 0 20px 0 20px;
+    background-color: #E4F7F3;
+}
+
+.people-sm-box-up {
+    margin-top: -250px;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.people-sm-box-down {
+    margin-top: 0;
+    z-index: 1;
+    transition: all 0.5s;
+}
+
+.people-stack-bg-bx:hover {
+    .people-stack-bg-image {
+        filter: blur(30px);
+        transform: scale(1.1);
+    }
+
+    .people-sm-box-up {
+        margin-top: 0;
+        z-index: 1;
+    }
+
+    .people-sm-box-down {
+        margin-top: -250px;
+        z-index: 1;
+    }
+}
+
+.people-sm-box-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.people-bx-green-title {
+    color: #007B42;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.people-bx-black-title {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.people-sm-box-inner-image {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (max-width: 1700px) {
+    .people-stack-bg-bx .people-text-section {
+        margin: 0 150px 0 150px;
+    }
+
+}
+
+@media (max-width:1425px) {
+    .people-stack-bg-bx .people-text-section {
+        margin: 0 50px 0 50px;
+    }
+
+    .people-box-section {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 1270px) {
+    .people-stack-bg-bx .people-text-section {
+        margin: 0 20px 0 20px;
+    }
+}
+
+@media (max-width:1020px) {
+
+    .people-box-section {
+        gap: 20px;
+        height: 400px;
+    }
+
+    .people-sm-box-up {
+        margin-top: -190px;
+    }
+
+    .people-stack-bg-bx:hover {
+        .people-sm-box-down {
+            margin-top: -190px;
+        }
+    }
+}
+
+@media (max-width:750px) {
+
+    .people-header-left-header {
+        font-size: 25px;
+    }
+
+    .people-header-right-header {
+        font-size: 18px;
+    }
+
+    .people-header-title {
+        gap: 20px;
+    }
+
+    .people-text {
+        font-size: 12px;
+    }
+
+    .people-stack-bg-image {
+        height: 400px;
+    }
+
+    .people-sm-box-up {
+        margin-top: -80px;
+    }
+
+    .people-stack-bg-bx:hover {
+        .people-sm-box-down {
+            margin-top: -100px;
+        }
+    }
+
+    .people-bx-green-title {
+        font-size: 14px;
+    }
+
+    .people-bx-black-title {
+        font-size: 16px;
+    }
+
+    .people-sm-box-inner {
+        gap: 10px;
+    }
+
+    .people-stack-bg-bx .people-text-section {
+        gap: 20px;
+    }
+
+    .people-box-section {
+        gap: 20px;
+        height: 300px;
+    }
+}
+
+@media (max-width:500px) {
+    .people-box-section {
+        height: 200px;
+    }
+
+    .people-stack-bg-image {
+        filter: blur(5px);
+    }
+}
+
+@media (max-width:400px) {
+
+    .people-header-left-header {
+        font-size: 20px;
+    }
+
+    .people-header-right-header {
+        font-size: 14px;
+    }
+
+    .people-header-title {
+        gap: 10px;
+    }
+
+    .people-sm-box-up {
+        margin-top: -50px;
+    }
+
+    .people-stack-bg-bx:hover {
+        .people-sm-box-down {
+            margin-top: -50px;
+        }
+    }
+
+    .people-bx-green-title {
+        font-size: 10px;
+    }
+
+    .people-bx-black-title {
+        font-size: 12px;
+    }
+
+    .people-box-section {
+        gap: 15px;
+        height: 150px;
+    }
+}

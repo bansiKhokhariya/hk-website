@@ -1,0 +1,26 @@
+.shopify-description {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    flex-direction: column;
+    padding: 100px 0 60px 0;
+}
+
+.shopify-description-text {
+    color: #7A7D7F;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width: 885px) {
+    .shopify-description-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width:550px) {
+    .shopify-description {
+        padding: 50px 0 60px 0;
+        gap: 20px;
+    }
+}

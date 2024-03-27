@@ -1,0 +1,114 @@
+.simulator-modeling-box {
+    display: flex;
+    width: 276px;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.simulator-modeling-box-top {
+    display: flex;
+    width: 276px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+    background: #E4F7F3;
+    box-shadow:
+        20px 20px 40px 0px rgba(0, 123, 66, 0.10) inset,
+        0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+
+.simulator-modeling-box-bottom {
+    display: flex;
+    width: 276px;
+    height: 300px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0px 0px 20px 20px;
+    background: #E4F7F3;
+    box-shadow: 20px 0px 40px 0px rgba(0, 123, 66, 0.10) inset, -20px -20px 50px 0px rgba(255, 255, 255, 0.80) inset;
+    transition: all 0.5s;
+}
+
+.simulator-modeling-content {
+    color: #7A7D7F;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.simulator-modeling-title {
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.simulator-modeling-icon {
+    margin-top: -70px;
+}
+
+
+.simulator-modeling-box:hover {
+    gap: 10px;
+
+    .simulator-modeling-icon-svg rect {
+        fill: #007B42;
+        transition: all 0.5s;
+    }
+
+    .simulator-modeling-icon-svg path {
+        stroke: white;
+        transition: all 0.5s;
+    }
+
+    .simulator-modeling-icon-svg-2 rect {
+        fill: #007B42;
+        transition: all 0.5s;
+    }
+
+    .simulator-modeling-icon-svg-2 path {
+        fill: white;
+        transition: all 0.5s;
+    }
+
+    .simulator-modeling-box-top {
+        box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+        background-color: #FFF;
+    }
+
+    .simulator-modeling-box-bottom {
+        background: #FFF;
+        box-shadow: 0px 50px 100px 0px rgba(0, 123, 66, 0.20);
+    }
+
+    .simulator-modeling-title {
+        color: #007B42;
+    }
+
+    .simulator-modeling-content {
+        color: #000;
+    }
+
+}
+
+@media (max-width:300px) {
+ 
+    .simulator-modeling-box-top {
+        width: 250px;
+       height: 120px;
+    }
+
+    .simulator-modeling-box-bottom {
+        width: 250px;
+        height: 320px;
+    }
+}
